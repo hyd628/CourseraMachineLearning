@@ -14,6 +14,16 @@ J = 0;
 %               You should set J to the cost.
 
 
+sum = 0;
+
+for i = 1:m
+
+sum = sum + (X (i,:)*theta - y (i,1))^2;
+
+endfor
+
+J = 1/(2*m)*sum;
+
 
 
 
